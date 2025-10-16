@@ -78,7 +78,7 @@ git branch -d nomeDaBranch
 `stagin area`: arquivos adicionadas via "git add." e prontos para serem comitados. Ou seja, estão estaged, estão no repositório local
 unstaged: arquivos não comitados, não estão na pasta oculta do git ainda, ou seja, estão no working tree / working directory (a pasta normal do pc) 
 
-# ⬇️GIT AVANÇADO⬇️ 
+# ⬇️ GIT AVANÇADO ⬇️ 
 
 ### ✅ git reset
 > Deleta todos commits APÓS O COMMIT SELECIONADO (pode manter as alterações ou não).  
@@ -134,6 +134,16 @@ git stash pop —index 1: somente a mudança de index 1 volta
 
 git stash branch NomeDaBranch 3: cria uma nova branch e coloca a mudança de index 3 na branch
 ```
+
+### ✅ git restore
+> Remove tudo que não estiver na staging area, ou seja tudo antes do "git add .". Útil para quando fez cagada e quer voltar ao estado original do repositório.
+```
+git restore .
+git clean -fd
+git fetch origin
+git reset --hard origin/$(git branch --show-current)
+```
+
 # ⬇️ APRENDER UM DIA ⬇️ 
 
 git diff  
