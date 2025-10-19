@@ -33,6 +33,7 @@ branch2, da onde virá o código base
 *Variação do comando acima para especificar a branch de referência ao criar uma nova branch.
 
 git branch -m antigoNome novoNome: altera o nome da branch
+git branch -d nomeDaBranch: deleta a branch localmente
 ```
 
 `git switch (nome da branch ou hash)` - muda para a branch onde as alterações serão feitas.
