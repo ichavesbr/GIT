@@ -32,8 +32,11 @@ branch2, da onde virá o código base
 *Altera pra nova branch direto.
 *Variação do comando acima para especificar a branch de referência ao criar uma nova branch.
 
-git branch -m antigoNome novoNome: altera o nome da branch
-git branch -d nomeDaBranch: deleta a branch localmente
+1️⃣ git branch -m novoNome: altera o nome da branch
+2️⃣ git push -u origin nomeDaBranchComNovoNome: cria a branch no github
+3️⃣ git push origin --delete nomeDaBranchAntiga: deleta a branch com nome antigo do github
+4️⃣ git branch -d nomeDaBranch: deleta a branch localmente, porque o git nao faz isso automaticamente
+5️⃣ git fetch --prune: verifica se alguma branch foi deletada no github
 ```
 
 `git switch (nome da branch ou hash)` - muda para a branch onde as alterações serão feitas.
@@ -43,14 +46,6 @@ git branch -d nomeDaBranch: deleta a branch localmente
 `git checkout -b nomeDaBranch` - cria e move as alterações para a branch criada direto.
 ***
 `git pull` - atualiza as alterações do gituhub para o pc, na branch selecionada
-***
-`git push -u origin nomeDaBranchCriada` - cria a branch no github
-
-`git push --set-upstream origin nomeDaBranchCriada` - maneira longa
-***
-`git fetch --prune` - verifica se alguma branch foi deletada no github, ou seja, remotamente
-
-`git branch -d nomeDaBranch` - deleta a branch localmente, porque o git nao faz isso automaticamente
 ***
 `git status` - mostra branch atual, commits e untracked files. (files não adicionados com git add .)
 ***
