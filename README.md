@@ -39,6 +39,12 @@ branch2, da onde virá o código base
 5️⃣ git fetch --prune: verifica se alguma branch foi deletada no github
 ```
 
+`git branch -r` - mostra todas as branches remotas, no github
+
+`git fetch --all`
+
+`git pull --all`
+
 `git switch (nome da branch ou hash)` - muda para a branch onde as alterações serão feitas.
 
 `git checkout (nome da branch ou hash)` - igual switch
